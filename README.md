@@ -1,15 +1,35 @@
-# React + TypeScript + Vite
+# dragdrop-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ドラッグ&ドロップ機能を持つReactアプリケーション
 
-Currently, two official plugins are available:
+## 技術スタック
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + TypeScript + Vite
+- ESLint設定済み
 
-## Expanding the ESLint configuration
+## 開発開始
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+npm install
+npm run dev
+```
+
+## ビルド
+
+```bash
+npm run build
+```
+
+## 使用プラグイン
+
+このテンプレートでは以下のプラグインを使用しています：
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) - Babelを使用したFast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) - SWCを使用したFast Refresh
+
+## ESLint設定の拡張
+
+本格的なアプリケーション開発の場合は、型安全なlintルールを有効にすることを推奨します：
 
 ```js
 export default tseslint.config([
@@ -39,7 +59,7 @@ export default tseslint.config([
 ])
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+React専用のlintルールについては、[eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) と [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) もインストールできます：
 
 ```js
 // eslint.config.js
