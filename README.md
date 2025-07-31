@@ -87,3 +87,9 @@ export default tseslint.config([
   },
 ])
 ```
+
+
+did-kitライブラリのインストール
+```bash
+ npm install @dnd-kit/core @dnd-kit/utilities @dnd-kit/sortable
+```
