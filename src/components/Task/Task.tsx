@@ -2,7 +2,12 @@ import './Task.css'
 import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 
-export default function Task({ id, title }: { id: string, title: string }) {
+interface TaskProps {
+  id: number;
+  title: string;
+}
+
+const Task: React.FC<TaskProps> = ({ id, title }) => {
   const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id });
 
   const style = {
@@ -17,3 +22,5 @@ export default function Task({ id, title }: { id: string, title: string }) {
     </div>
   )
 }
+
+export default Task;
